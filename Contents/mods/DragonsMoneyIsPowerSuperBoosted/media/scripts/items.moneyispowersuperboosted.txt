@@ -1,0 +1,34 @@
+module Base
+{   
+	
+    item PowerMoneyStack
+    {
+        DisplayCategory = Junk,
+		Weight	=	-0.12,
+		Type	=	Normal,
+		DisplayName	=	Money Stack,
+		Icon	=	PowerMoneyStack,
+		WorldStaticModel = PowerMoneyStack,
+    }	
+
+    item PowerMoneyStackBlock
+    {
+        DisplayCategory = Junk,
+		Weight	=	-0.52,
+		Type	=	Normal,
+		DisplayName	=	Money Stack Block,
+		Icon	=	PowerMoneyStackBlock,
+		WorldStaticModel = PowerMoneyStackBlock,
+    }
+
+    item PowerMoneyStackTower
+    {
+        DisplayCategory = Junk,
+		Weight	=	-2.16,
+		Type	=	Normal,
+		DisplayName	=	Money Stack Tower,
+		Icon	=	PowerMoneyStackTower,
+		WorldStaticModel = PowerMoneyStackTower,
+    }
+
+}

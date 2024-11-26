@@ -1,0 +1,5 @@
+name=Dragons Money Makes You Stronger Flat
+poster=poster.png
+id=dragonking.moneymakesyoustrongerflat
+description=An override that changes the weight reduction values to be flat, based on the original mod's weight reduction. You can also use this override mod as a baseline for personal customization of the weight values.
+require=dragonking.moneymakesyoustronger

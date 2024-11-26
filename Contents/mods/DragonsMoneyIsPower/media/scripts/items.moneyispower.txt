@@ -1,0 +1,46 @@
+module Base
+{   
+    item EmptyWallet
+    {
+        DisplayCategory = Junk,
+		Weight	=	0.1,
+		Type	=	Normal,
+		DisplayName	=	Empty Wallet,
+		Icon	=	Wallet_01,
+		WorldStaticModel = Wallet,
+    }
+
+/*		50 + 10 <- 0		*/	
+    item PowerMoneyStack
+    {
+        DisplayCategory = Junk,
+		Weight	=	-0.012,
+		Type	=	Normal,
+		DisplayName	=	Money Stack,
+		Icon	=	PowerMoneyStack,
+		WorldStaticModel = PowerMoneyStack,
+    }	
+
+/*		200 + 60 <- 40(10*4)		*/
+    item PowerMoneyStackBlock
+    {
+        DisplayCategory = Junk,
+		Weight	=	-0.052,
+		Type	=	Normal,
+		DisplayName	=	Money Stack Block,
+		Icon	=	PowerMoneyStackBlock,
+		WorldStaticModel = PowerMoneyStackBlock,
+    }
+
+/*		800 + 280 <- 240(60*4)		*/
+    item PowerMoneyStackTower
+    {
+        DisplayCategory = Junk,
+		Weight	=	-0.216,
+		Type	=	Normal,
+		DisplayName	=	Money Stack Tower,
+		Icon	=	PowerMoneyStackTower,
+		WorldStaticModel = PowerMoneyStackTower,
+    }
+
+}

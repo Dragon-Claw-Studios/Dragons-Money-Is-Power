@@ -1,0 +1,13 @@
+module Base
+{   
+    item EmptyCreditCard
+    {
+        DisplayCategory = Junk,
+		Weight	=	0.1,
+		Type	=	Normal,
+		DisplayName	=	Empty Credit Card,
+		Icon	=	CreditCard,
+		WorldStaticModel = CreditCard,
+    }
+
+}

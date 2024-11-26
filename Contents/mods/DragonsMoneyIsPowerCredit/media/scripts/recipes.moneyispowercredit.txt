@@ -1,0 +1,17 @@
+module dragonking.moneyispowercredit
+{
+    imports
+    {
+        Base
+    }
+	recipe Withdraw Credit Card Money
+    {
+        CreditCard=1,
+
+        Result:EmptyCreditCard=1,
+        Time:100.0,
+		OnTest:MoneyRecipes_IsNearATM64,
+        OnCreate:Recipe.OnCreate.ATMWithdraw,
+    }	
+
+}

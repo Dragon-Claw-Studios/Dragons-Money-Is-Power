@@ -1,0 +1,110 @@
+module dragonking.moneyispower
+{
+    imports
+    {
+        Base
+    }
+    recipe Search Wallet for Money
+    {
+        Wallet/Wallet2/Wallet3/Wallet4,
+
+        Result:EmptyWallet,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.SearchForMoney,
+        CanBeDoneFromFloor:true,
+    }
+    recipe Salvage Empty Wallet
+    {
+        EmptyWallet,
+
+        Result:LeatherStrips,
+        Time:100.0,
+        CanBeDoneFromFloor:true,
+    }
+
+	
+/****************************************/
+/*		Money		*/
+/****************************************/
+	recipe Merge Money Into Stack
+    {
+        Money=50,
+		
+        Result:PowerMoneyStack=1,
+        Time:25.0,
+    }
+	
+	recipe Merge Money Into Block
+    {
+        Money=200,
+		
+        Result:PowerMoneyStackBlock=1,
+        Time:100.0,
+    }	
+	
+	recipe Merge Money Into Tower
+    {
+        Money=800,
+		
+        Result:PowerMoneyStackTower=1,
+        Time:200.0,
+    }	
+	
+/****************************************/
+/*		Money Stack		*/
+/****************************************/
+	recipe Separate Money Stack
+    {
+        PowerMoneyStack=1,
+		
+        Result:Money=50,
+        Time:25.0,
+    }
+
+	recipe Merge Money Stack Into Block
+    {
+        PowerMoneyStack=4,
+		
+        Result:PowerMoneyStackBlock=1,
+        Time:25.0,
+    }
+	
+	recipe Merge Money Stack Into Tower
+    {
+        PowerMoneyStack=16,
+		
+        Result:PowerMoneyStackTower=1,
+        Time:100.0,
+    }
+	
+/****************************************/
+/*		Money Stack Block		*/
+/****************************************/
+	recipe Separate Money Stack Block
+    {
+        PowerMoneyStackBlock=1,
+		
+        Result:PowerMoneyStack=4,
+        Time:25.0,
+    }
+
+	recipe Merge Money Stack Blocks Into Tower
+    {
+        PowerMoneyStackBlock=4,
+		
+        Result:PowerMoneyStackTower=1,
+        Time:25.0,
+    }
+
+/****************************************/
+/*		Money Stack Tower		*/
+/****************************************/
+	recipe Separate Money Stack Tower
+    {
+        PowerMoneyStackTower=1,
+		
+        Result:PowerMoneyStackBlock=4,
+        Time:25.0,
+    }
+	
+}
